@@ -1,7 +1,7 @@
 {% extends 'partials/base.html' %}
-
+    
 {% block title %}Home page{% endblock %}
-
+{% include 'partial/topnav.html' %}    
 {% block content %}
 {% if user.is_authenticated and user.is_staff and user.is_superuser %} 
     <!--Graphs-->
